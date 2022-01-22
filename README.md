@@ -54,6 +54,7 @@ The uploaded code is for Guardian but the same code can be used for the other ne
 
 Modelling:
 The codes for the modelling part of the study are almost all similar. The only difference is the data source of the different news sources and whether the sentiment scoring is word level and sentence level. For example: NY Times/CNBC/Reuters/Guardian + Sentence level score + EUR-USD/GBP-USD or NY Times/CNBC/Reuters/Guardian + Word level score + EUR-USD/GBP-USD. 
+Using Forex data to predict without sentiment score. 
 
 Scraping news headlins: 
 For Guardian, it was scraped from the software Orange. 
