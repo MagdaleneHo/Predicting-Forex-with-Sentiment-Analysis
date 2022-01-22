@@ -16,7 +16,7 @@ months_in_range = [x.split(' ') for x in pd.date_range(start, end, freq='MS').st
 
 def send_request(date):
     '''Sends a request to the NYT Archive API for given date.'''
-    url = f"https://api.nytimes.com/svc/archive/v1/{year}/{month}.json?api-key=OkBsGQZUivqTLtkQWYbLGwhdV86qCdmI"
+    url = f"https://api.nytimes.com/svc/archive/v1/{year}/{month}.json?api-key=#INSERT-YOUR-API-KEY"
     response = requests.get(url).json()
     time.sleep(6)
     return response
