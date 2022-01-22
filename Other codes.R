@@ -3,6 +3,7 @@ library("dplyr")
 library("corrplot")
 library("moments")
 library("tidyverse")
+########################################## Data Understanding #############################################
 
 ########################################## Forex Data #############################################
 EURUSD <- read_csv("EUR-USD.csv")
@@ -133,7 +134,7 @@ nytimes <- read_csv("2019-01.csv")
 head(nytimes,10) #first 10 obs
 sum(is.na(nytimes)) #total null values
 
-########################################## Results ################################################
+########################################## Data Visualization ################################################
 
 scores <- read_csv("Scores.csv")  
 
@@ -200,7 +201,7 @@ ssource_plot2 <- ggplot(ssource, aes(x = Sentiment_type, y = Avg, fill = Source)
         theme(plot.title = element_text(size=14, hjust = 0.5)) 
 ssource_plot2
 
-########################################## Extra ##################################################
+########################################## Financial News Sources ##################################################
 sentence_level <- rbind(final_GuardianSS,final_SSReuters,final_CNBCss) %>% 
         group_by(Date) %>% 
         mutate(score = mean(ave_sentiment)) %>% 
