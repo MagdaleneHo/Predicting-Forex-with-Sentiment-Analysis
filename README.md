@@ -48,7 +48,9 @@ The machine learning algorithms used are:
 
 The open-source software Python Jupyter Notebook was used to run the algorithms applying libraries such as sklearn, pandas, numpy and seaborn. The modelling was done on the different type of news sources in word level and sentence level. It was also completed on the Forex data without sentiment score. Modelling on the effect of positive and negative news headlines was tested on the best models. 
 
-## The codes
+## Some background of codes
+Data understanding: 
+Modelling:
 The codes for the modelling part of the study are almost all similar. The only difference is the data source of the different news sources and whether the sentiment scoring is word level and sentence level. For example: NY Times/CNBC/Reuters/Guardian + Sentence level score + EUR-USD/GBP-USD or NY Times/CNBC/Reuters/Guardian + Word level score + EUR-USD/GBP-USD. 
 
 
